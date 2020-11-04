@@ -10,7 +10,7 @@ func _on_body_entered(body: Node) -> void:
 
 
 func _get_configuration_warning() -> String:
-	return "The nex scene property can't be empty" if not next_scene else ""
+	return "The next scene property can't be empty" if not next_scene else ""
 
 
 func teleport() -> void:
@@ -18,3 +18,4 @@ func teleport() -> void:
 	yield(anim_player, "animation_finished")
 	
 	get_tree().change_scene_to(next_scene)
+
